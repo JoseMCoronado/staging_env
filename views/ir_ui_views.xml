@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="less_helpers_mod">
+          <field name="name">x_gfp.less_helpers.mod</field>
+          <field name="inherit_id" ref="web_enterprise.less_helpers"/>
+          <field name="priority">99</field>
+          <field name="arch" type="xml">
+            <data>
+              <xpath expr="//link[@href='/web_enterprise/static/src/less/variables.less']" position="replace">
+                   <link rel="stylesheet" type="text/less" href="/staging_env/static/src/less/variables.less"/>
+              </xpath>
+            </data>
+          </field>
+    </record>
+  </data>
+</odoo>
