@@ -20,24 +20,18 @@
 ###################################################################################
 
 {
-    'name': 'Staging Environment Palette',
-    'category': 'Hidden',
-    'author': 'GFP Solutions LLC',
-    'summary': 'Custom',
-    'version': '1.0',
-    'description': """
+    "name": "Staging Environment Palette",
+    "category": "Hidden",
+    "author": "GFP Solutions LLC",
+    "summary": "Custom",
+    "version": "1.0",
+    "description": """
 
 THIS MODULE IS PROVIDED AS IS - INSTALLATION AT USERS' OWN RISK - AUTHOR OF MODULE DOES NOT CLAIM ANY
 RESPONSIBILITY FOR ANY BEHAVIOR ONCE INSTALLED.
         """,
-
-    'depends':['base'],
-    'data':[
-        'views/ir_ui_views.xml',
-    ],
-    'static':[
-        'static/src/less/variables.less',
-    ],
-    'installable': True,
-
+    "depends": ["web_enterprise"],
+    "data": ["views/ir_ui_views.xml",],
+    "static": ["static/src/less/variables.less",],
+    "installable": True,
 }
